@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[3]:
-
-
 name = "Коля"
 sex = "man"
 weight = float(78)
