@@ -52,16 +52,3 @@ def function_weight(name,weight,height,sex):
 man1 = function_weight(name1,weight1,height1,sex1)
 man2 = function_weight(name2,weight2,height2,sex2)
 man3 = function_weight(name3,weight3,height3,sex3)
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
