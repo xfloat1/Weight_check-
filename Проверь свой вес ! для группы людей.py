@@ -1,20 +1,7 @@
-name1 = "Катя"
-sex1 = "woman"
-weight1 = float(70)
-height1 = float(165)
-
-name2 = "Лиза"
-sex2 = "woman"
-weight2 = float(70)
-height2 = float(170)
-
-name3 = "Влад"
-sex3 = "man"
-weight3 = float(70)
-height3 = float(180)
-
-
-
+name1,name2,name3 = "Катя", "Лиза", "Влад"
+sex1,sex2,sex3 = "woman","woman","man"
+weight1,weight2,weight3 = float(70),float(70),float(70)
+height1,height2,height3 = float(165),float(170),float(180)
 def function_weight(name,weight,height,sex):
     
     result_weight = height-weight
