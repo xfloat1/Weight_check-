@@ -1,0 +1,31 @@
+class Patient:
+    def __init__(self, name, weight, height, sex):
+        self.name = name
+        self.weight = weight
+        self.height = height
+        self.sex = sex
+    
+        result_weight = height-weight
+        difference1 = result_weight - 100 
+        difference2 = 100 - result_weight
+        
+        if height <= 140 or weight <= 35:
+            print("Вы ввели некорректные данные о росте или весе у пользователя " + name)
+        else:
+            if sex == "man":
+                if result_weight > 100:
+                    print(name + " ты не достиг нормы" + ", тебе нужно набрать еще " + str(round(difference1,2)) + " кг")
+                if result_weight == 100:
+                    print(name + " ты достиг нормы!")
+                if result_weight < 100:
+                    print(name + " ты набрал лишний вес" + ", тебе нужно скинуть " + str(round(difference2,2)) + " кг")
+            if sex == "woman":
+                if result_weight > 100:
+                    print(name + " ты не достигла нормы" + ", тебе нужно набрать еще " + str(round(difference1,2)) + " кг")
+                if result_weight == 100:
+                    print(name + " ты достигла нормы!")
+                if result_weight < 100:
+                    print(name + " ты набрала лишний вес" + ", тебе нужно скинуть " + str(round(difference2,2)) + " кг")
+            else:
+                if sex != "man" and "woman":
+                    print("Вы ввели некорректные данные о поле пользователя " + name)
