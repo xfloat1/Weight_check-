@@ -10,7 +10,9 @@ class Patient:
         difference2 = 100 - result_weight       
         
         if sex != "man" and sex != "woman":
-            print("Вы ввели некорректные данные о поле пользователя " + name)
+            return print("Вы ввели некорректные данные о поле пользователя " + name)
+        if height <= 140 or weight <= 35:
+            return print("Вы ввели некорректные данные о росте или весе у пользователя " + name)
         else:
             if sex == "man":
                 if result_weight > 100:
@@ -26,6 +28,3 @@ class Patient:
                     print(name + " ты достигла нормы!")
                 if result_weight < 100:
                     print(name + " ты набрала лишний вес" + ", тебе нужно скинуть " + str(round(difference2,2)) + " кг")
-            else:
-                if height <= 140 or weight <= 35:
-                    print("Вы ввели некорректные данные о росте или весе у пользователя " + name)
