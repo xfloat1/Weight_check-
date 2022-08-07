@@ -1,29 +1,29 @@
-name = str(input("Введите ИМЯ: "))
+name = str.lower(input("Введите Ф.И.О: "))
 weight = float(input("Введите ВЕС (кг): "))
 height = float(input("Введите РОСТ (см): "))
-sex = str(input("Введите ПОЛ (М или Ж): "))
+sex = str.lower(input("Введите ПОЛ (М или Ж): "))
 separation = "--------------------------\n"
 
 result_weight = height-weight
 difference1 = result_weight - 100 
 difference2 = 100 - result_weight               
     
-if sex != "М" and sex != "м" and sex != "Ж" and sex != "Ж":
-    print(separation + "Вы ввели некорректные данные о поле пользователя " + name)
+if sex != "м" and sex != "ж":
+    print(separation + "Вы ввели некорректные данные о поле пользователя " + name.title())
 if height <= 140 or weight <= 35:
-    print(separation + "Вы ввели некорректные данные о росте или весе у пользователя " + name)
+    print(separation + "Вы ввели некорректные данные о росте или весе у пользователя " + name.title())
 else:
-    if sex == "М" or sex == "м" :
+    if sex == "м" :
         if result_weight > 100:
-            print(separation + name + " ты не достиг нормы" + ", тебе нужно набрать еще " + str(round(difference1,2)) + " кг")
+            print(separation + name.title() + " ты не достиг нормы" + ", тебе нужно набрать еще " + str(round(difference1,2)) + " кг")
         if result_weight == 100:
-            print(separation + name + " ты достиг нормы!")
+            print(separation + name.title() + " ты достиг нормы!")
         if result_weight < 100:
-            print(separation + name + " ты набрал лишний вес" + ", тебе нужно скинуть " + str(round(difference2,2)) + " кг")
-    if sex == "Ж" or sex == "ж":
+            print(separation + name.title() + " ты набрал лишний вес" + ", тебе нужно скинуть " + str(round(difference2,2)) + " кг")
+    if sex == "ж":
         if result_weight > 100:
-            print(separation + name + " ты не достигла нормы" + ", тебе нужно набрать еще " + str(round(difference1,2)) + " кг")
+            print(separation + name.title() + " ты не достигла нормы" + ", тебе нужно набрать еще " + str(round(difference1,2)) + " кг")
         if result_weight == 100:
-            print(separation + name + " ты достигла нормы!")
+            print(separation + name.title() + " ты достигла нормы!")
         if result_weight < 100:
-            print(separation + name + " ты набрала лишний вес" + ", тебе нужно скинуть " + str(round(difference2,2)) + " кг")
+            print(separation + name.title() + " ты набрала лишний вес" + ", тебе нужно скинуть " + str(round(difference2,2)) + " кг")
