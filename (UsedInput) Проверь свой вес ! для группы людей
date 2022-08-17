@@ -15,15 +15,19 @@ if height <= 140 or weight <= 35:
 else:
     if sex == "м" :
         if result_weight > 100:
-            print(separation + name.title() + " ты не достиг нормы" + ", тебе нужно набрать еще " + str(round(difference1,2)) + " кг")
+            print(separation + name.title() + " ты не достиг нормы" 
+                  + ", тебе нужно набрать еще " + str(round(difference1,2)) + " кг")
         if result_weight == 100:
             print(separation + name.title() + " ты достиг нормы!")
         if result_weight < 100:
-            print(separation + name.title() + " ты набрал лишний вес" + ", тебе нужно скинуть " + str(round(difference2,2)) + " кг")
+            print(separation + name.title() + " ты набрал лишний вес" 
+                  + ", тебе нужно скинуть " + str(round(difference2,2)) + " кг")
     if sex == "ж":
         if result_weight > 100:
-            print(separation + name.title() + " ты не достигла нормы" + ", тебе нужно набрать еще " + str(round(difference1,2)) + " кг")
+            print(separation + name.title() + " ты не достигла нормы" 
+                  + ", тебе нужно набрать еще " + str(round(difference1,2)) + " кг")
         if result_weight == 100:
             print(separation + name.title() + " ты достигла нормы!")
         if result_weight < 100:
-            print(separation + name.title() + " ты набрала лишний вес" + ", тебе нужно скинуть " + str(round(difference2,2)) + " кг")
+            print(separation + name.title() + " ты набрала лишний вес" 
+                  + ", тебе нужно скинуть " + str(round(difference2,2)) + " кг")
